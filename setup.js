@@ -29,7 +29,7 @@ async function generateDeviceIdentifier() {
 function generatePubKey(length = 52) {
     const prefix = "12D3KooW";
     const remainingLength = length - prefix.length;
-    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     let remainingChars = '';
 
     for (let i = 0; i < remainingLength; i++) {
